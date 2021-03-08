@@ -449,5 +449,26 @@ template {
 }
 
 .footer {
-    background-color: red;
+    background-color: rgba(255, 238, 0, 0.53);
+
+    .footer__info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            .social-icon {
+                width: 100px;
+                margin: 0 0.625rem;
+            }
+
+            .social-icon.github {
+                width: 30px;
+            }
+        }
+    }
 }
