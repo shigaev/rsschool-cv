@@ -388,6 +388,20 @@ template {
         url("../fonts/Roboto-Regular.woff") format("woff");
 }
 
+.header {
+    color: #000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+
+    .header__title {
+        padding: 0 0 1rem 0;
+        text-align: center;
+
+        @media screen and (max-width: 495px) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -405,6 +419,7 @@ template {
                 max-width: 100%;
                 margin-top: 1rem;
                 border-radius: 5px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.27);
             }
         }
 
@@ -429,6 +444,31 @@ template {
         @media screen and (max-width: 767px) {
             flex-wrap: wrap;
             font-size: 0.875em;
+        }
+    }
+}
+
+.footer {
+    background-color: rgba(255, 238, 0, 0.53);
+
+    .footer__info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            .social-icon {
+                width: 100px;
+                margin: 0 0.625rem;
+            }
+
+            .social-icon.github {
+                width: 30px;
+            }
         }
     }
 }
