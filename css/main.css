@@ -348,6 +348,23 @@ template {
   src: local("Roboto"), url("../fonts/Roboto-Regular.woff") format("woff");
 }
 
+.header {
+  color: #000;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+}
+
+.header .header__title {
+  padding: 0 0 1rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 495px) {
+  .header .header__title {
+    font-size: 1.5rem;
+  }
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -370,6 +387,8 @@ template {
   max-width: 100%;
   margin-top: 1rem;
   border-radius: 5px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.27);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.27);
 }
 
 .wrapper .user .user-info {
@@ -395,5 +414,9 @@ template {
         flex-wrap: wrap;
     font-size: 0.875em;
   }
+}
+
+.footer {
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */
