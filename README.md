@@ -1,0 +1,1 @@
+[CV](https://shigaev.github.io/rsschool-cv/cv)
